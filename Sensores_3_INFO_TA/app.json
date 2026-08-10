@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Sensores",
+    "slug": "sensores",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/snack-icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/snack-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.luisfilipetinos.sensores"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e612fe9e-601f-4574-9866-64515e406813"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
