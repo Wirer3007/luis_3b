@@ -4,11 +4,11 @@
     "slug": "sensores",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/snack-icon.png",
+    "icon": "./assets/sensores.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": false,
     "splash": {
-      "image": "./assets/snack-icon.png",
+      "image": "./assets/sensores.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/sensores.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
@@ -28,7 +28,6 @@
     },
     "extra": {
       "eas": {
-        "projectId": "e612fe9e-601f-4574-9866-64515e406813"
       }
     },
     "plugins": [
