@@ -5,7 +5,7 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    padding: 20
+    padding: 20,
   },
   textoMovimento: {
     fontSize: 24

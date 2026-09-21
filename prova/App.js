@@ -1,20 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Menu from './telas/menu';
+import { useEffect, useState } from 'react';
 
 export default function App() {
+
+const [menu, setMenu] = useState(true);
+const [faseOne, setFaseOne] = useState(false);
+const [faseTwo, setFaseTwo] = useState(false);
+const [faseThree, setFaseThree] = useState(false);
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Menu
+            menu={menu}
+            setMenu={setMenu}
+            faseOne={faseOne}
+            setFaseOne={setFaseOne}
+            faseTwo={faseTwo}
+            setFaseTwo={setFaseTwo}
+            faseThree={faseThree}
+            setFaseThree={setFaseThree}
+        />
+    
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
