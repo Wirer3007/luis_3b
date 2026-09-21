@@ -1,3 +1,4 @@
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
@@ -5,20 +6,37 @@ import { Ionicons } from '@expo/vector-icons';
 import Fases from '../telas/fases';
 import Home from '../telas/home';
 import Cor from '../telas/cor';
-import Fase1 from '../telas/fase1';
+import FaseOne from '../telas/fase1';
 
 const Tab = createBottomTabNavigator();
 
-export default function Menu({menu, setMenu, faseOne, setFaseOne, faseTwo, setFaseTwo, faseThree, setFaseThree}) {
+export default function Menu({
+    menu,
+    setMenu,
+    faseOne,
+    setFaseOne
+}) {
 
+    console.log("Teste Menu");
+
+    // Se a fase 1 estiver ativa, mostra a fase
     if (faseOne) {
-        return <Fase1 />;
+        return (
+            <FaseOne
+                menu={menu}
+                setMenu={setMenu}
+                setFaseOne={setFaseOne}
+            />
+        );
     }
-
 
     return (
         <NavigationContainer>
-            <Tab.Navigator screenOptions={{ headerShown: false }}>
+            <Tab.Navigator
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
 
                 <Tab.Screen
                     name="Menu"
@@ -50,8 +68,6 @@ export default function Menu({menu, setMenu, faseOne, setFaseOne, faseTwo, setFa
                         <Fases
                             setMenu={setMenu}
                             setFaseOne={setFaseOne}
-                            setFaseTwo={setFaseTwo}
-                            setFaseThree={setFaseThree}
                         />
                     )}
                 </Tab.Screen>

@@ -1,17 +1,21 @@
+
 import { Text, View, TouchableOpacity } from 'react-native';
 import Estilos from '../styles/Estilos';
 
 export default function Fases({
     setMenu,
     setFaseOne,
-    setFaseTwo,
-    setFaseThree
 }) {
+
+    console.log("Teste Fases");
+
     return (
         <View style={Estilos.telaI}>
 
             <View style={Estilos.tituloF}>
-                <Text style={Estilos.TituloF}>Levels</Text>
+                <Text style={Estilos.TituloF}>
+                    Levels
+                </Text>
             </View>
 
             <View style={Estilos.listaFases}>
@@ -23,51 +27,61 @@ export default function Fases({
                         setFaseOne(true);
                     }}
                 >
-                    <Text style={Estilos.textoFase}>Level 1 ▶</Text>
+                    <Text style={Estilos.textoFase}>
+                        Level 1 ▶
+                    </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     style={Estilos.level}
-                    onPress={() => {
-                        setMenu(false);
-                        setFaseTwo(true);
-                    }}
                 >
-                    <Text style={Estilos.textoFase}>Level 2 ▶</Text>
+                    <Text style={Estilos.textoFase}>
+                        Level 2 ▶
+                    </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                     style={Estilos.level}
-                    onPress={() => {
-                        setMenu(false);
-                        setFaseThree(true);
-                    }}
                 >
-                    <Text style={Estilos.textoFase}>Level 3 ▶</Text>
+                    <Text style={Estilos.textoFase}>
+                        Level 3 ▶
+                    </Text>
                 </TouchableOpacity>
 
                 <View style={Estilos.levelBloqueado}>
-                    <Text style={Estilos.textoBloqueado}>Level 4</Text>
+                    <Text style={Estilos.textoBloqueado}>
+                        Level 4
+                    </Text>
                 </View>
 
                 <View style={Estilos.levelBloqueado}>
-                    <Text style={Estilos.textoBloqueado}>Level 5</Text>
+                    <Text style={Estilos.textoBloqueado}>
+                        Level 5
+                    </Text>
                 </View>
 
                 <View style={Estilos.levelBloqueado}>
-                    <Text style={Estilos.textoBloqueado}>Level 6</Text>
+                    <Text style={Estilos.textoBloqueado}>
+                        Level 6
+                    </Text>
                 </View>
 
                 <View style={Estilos.levelBloqueado}>
-                    <Text style={Estilos.textoBloqueado}>Level 7</Text>
+                    <Text style={Estilos.textoBloqueado}>
+                        Level 7
+                    </Text>
                 </View>
 
                 <View style={Estilos.levelBloqueado}>
-                    <Text style={Estilos.textoBloqueado}>Level 8</Text>
+                    <Text style={Estilos.textoBloqueado}>
+                        Level 8
+                    </Text>
                 </View>
 
                 <View style={Estilos.levelBloqueado}>
-                    <Text style={Estilos.textoBloqueado}>Level 9</Text>
+                    <Text style={Estilos.textoBloqueado}>
+                        Level 9
+                    </Text>
                 </View>
 
             </View>
@@ -75,3 +89,5 @@ export default function Fases({
         </View>
     );
 }
+
+

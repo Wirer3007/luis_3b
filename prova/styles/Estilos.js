@@ -11,11 +11,10 @@ export default StyleSheet.create({
    area: {
     width: '100%',
     height: 1000,
-    backgroundColor: '#ff0000',
+    backgroundColor: '#ac7373',
     borderWidth: 2,
-    borderColor: '#555',
+    borderColor: '#000000',
     borderRadius: 10,
-    overflow: 'hidden',
     position: 'relative',
   },
   
@@ -116,7 +115,9 @@ textoBloqueado: {
     fontSize: 25,
     fontWeight: 'bold',
     color: '#555',
-}, previewCor: {
+},
+
+previewCor: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -166,5 +167,8 @@ textoVoltar: {
     fontWeight: 'bold',
     color: '#ffffff',
 },
+obstaculoS: {
+    backgroundColor: '#e300f8',
+}
 
 })
