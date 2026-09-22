@@ -167,8 +167,40 @@ textoVoltar: {
     fontWeight: 'bold',
     color: '#ffffff',
 },
-obstaculoS: {
-    backgroundColor: '#e300f8',
-}
+obstaculo1: {
+    position: 'absolute',
+    left: 160,
+    top: 330,
+    width: 100,
+    height: 40,
+    backgroundColor: 'red',
+},
 
+obstaculo2: {
+    position: 'absolute',
+    left: 65,
+    top: 466,
+    width: 100,
+    height: 40,
+    backgroundColor: 'red',
+},
+
+obstaculo3: {
+    position: 'absolute',
+    left: 267,
+    top: 570,
+    width: 80,
+    height: 40,
+    backgroundColor: 'red',
+},
+porta: {
+    position: 'absolute',
+    left: 170,
+    top: 650,
+    width: 60,
+    height: 100,
+    backgroundColor: '#00e1ff',
+    borderWidth: 3,
+    borderColor: 'rgb(255, 254, 254)',
+},
 })
